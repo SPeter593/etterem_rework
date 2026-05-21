@@ -1,0 +1,54 @@
+@media screen and (max-width: 601px){ /*footer*/
+
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 2px solid black;
+        margin:0;
+        padding:0;
+        align-items: center;
+        background-color: #C49A6C;
+    }
+    p{
+        font-size: 13px;
+    }   
+    .socials{
+        display: none;
+    }
+    
+    .terms{
+        display:none;
+    }
+}
+@media screen and (min-width: 601px){/*footer*/
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-top: 2px solid black;
+        margin:0;
+        padding:0;
+        background-color: #C49A6C;
+        line-height: 25px;
+        height:60px;
+        align-items: center;
+        border-radius: 0%;
+    }
+    p{
+        font-size: 1vw;
+    }
+    .szlogen{
+        display: none;
+    }
+    img{
+        height:2vw;
+        width: 2vw;
+        border-radius: 5px; 
+    }
+    .ig{
+        border-radius: 5px; 
+    }
+    .fb{
+        border-radius: 5px; 
+    }
+}
