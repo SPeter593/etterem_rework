@@ -2,41 +2,196 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-     <link rel="stylesheet" href="css/header.css">
-     <link rel="stylesheet" href="css/footer.css">
-    <title>La Petite Fork</title>
+    <title>La Petite Fork – Étlap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/kozos.css">
+    <link rel="stylesheet" href="css/etlap.css">
 </head>
 <body>
-    <header>
-        <p id="slogen">"Egy csipetnyi Párizs,<br> egy falat Budapest" <br>-Michael Florentin
-        </p>
-            <a href="index.html"><button class="button" role="button">Kezdőlap</button></a>
-                <div class="dropdown" style="float:left;">
-                   <button class="dropbtn"> <img class="hamburgermenu" src="images/menu-icon-PNG-1.png" alt="Menu"></button>
-                    <div class="dropdown-content" style="left:0;">
-                    <a href="index.html">Kezdőlap</a>
-                    <a href="etlap.html">Étlap</a>
-                    </div>
-                </div>
-                <h1>La Petite Fork</h1>
-            <a href="etlap.html"><button class="button" role="button">Étlap</button></a>
-            <img class="logo logoright" src="images/media.jpg" alt="logo">
-    </header>
-    
 
-    <footer>
-        <p class="copyright">Copyright ©</p>
-        <p class="elerhetoseg">Elérhetőség: +36 30 123 4567 </p>
-        <p class="szlogen">"Egy csipetnyi Párizs,<br> egy falat Budapest"<br> - Michel Florentin</p>
-        <section class="socials">
-            <a href="https://www.instagram.com/" target="_blank"><img class="ig" src="images/Instagram-icon.png" alt="Instagram logo"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img class="fb" src="images/facebook-icon.png" alt="Facebook logo"></a>
-            <a href="https://www.x.com/" target="_blank"><img class="x" src="images/x-icon.avif" alt="X logo"></a>
+<header class="sticky-top">
+    <p id="slogen">"Egy csipetnyi Párizs,<br>egy falat Budapest"<br>-Michael Florentin</p>
+    <div class="dropdown" id="hamburger">
+        <button onclick="toggleMenu()"><img src="images/menu-icon-PNG-1.png" alt="menu"></button>
+        <div id="hamburgerMenu">
+            <a href="index.html">Kezdőlap</a>
+            <a href="etlap.html">Étlap</a>
+        </div>
+    </div>
+    <h1>La Petite Fork</h1>
+    <div class="header-jobb">
+        <a href="index.html"><button>Kezdőlap</button></a>
+        <a href="etlap.html"><button>Étlap</button></a>
+        <img class="logo" src="images/media.jpg" alt="logo">
+    </div>
+</header>
+
+<div class="etlap-wrapper">
+
+    <nav class="konyvjelzo">
+        <h5>Könyvjelzők</h5>
+        <a href="#napi">Napi ajánlatunk</a>
+        <a href="#aperitif">Aperitif</a>
+        <a href="#italok">Italok</a>
+        <a href="#eloetelek">Előételek</a>
+        <a href="#foetelek">Főételek</a>
+        <a href="#sajt">Sajtválogatás</a>
+        <a href="#desszert">Desszertek</a>
+    </nav>
+
+    <main>
+
+        <section id="napi">
+            <h2>Napi Ajánlatunk:</h2>
+            <p class="alcim">(előétel, főétel, desszert sorrendben)</p>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/Foie_gras_en_cocotte.jpg" alt="Foie Gras">
+                    <div class="overlay">Foie Gras<br><small>Libamáj terrine házi briós és fügés chutney kíséretében</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/MC-Beef-Bourguignon-lpbv-mediumSquareAt3X-v4.jpg" alt="Boeuf Bourguignon">
+                    <div class="overlay">Boeuf Bourguignon<br><small>Vörösboros marharagu gyökérzöldségekkel és burgonyapürével</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/AR-228515-simple-creme-brulee-dessert-dmfs-4x3-821623e7a86548eeb89370ac23d5f251.jpg" alt="Crème Brûlée">
+                    <div class="overlay">Crème Brûlée<br><small>Klasszikus vaníliakrém karamellizált cukorréteggel</small></div>
+                </div>
+            </div>
+            <p class="napi-ar">Most csak 15.990 Ft<br><small>(az ár nem tartalmazza az innivalókat)</small></p>
         </section>
 
-    </footer>
+        <h1 class="menu-cim">Menü</h1>
+
+        <section id="aperitif">
+            <h2>Aperitif</h2>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/kir-royal-koktel-e1546415295286.jpg" alt="Kir Royale">
+                    <div class="overlay">Kir Royale<br><small>(pezsgő és feketeribizli likőr)</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/spiritus_pastis.webp" alt="Pastis">
+                    <div class="overlay">Pastis<br><small>(ánizsos aperitif)</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="italok">
+            <h2>Italok</h2>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/bordeaux_1.jpg" alt="Francia borválogatás">
+                    <div class="overlay">Francia borválogatás<br><small>(Bordeaux, Burgundy, Loire)</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/kave-fajtak.jpg" alt="Kávék">
+                    <div class="overlay">Café au Lait, Espresso<br><small>Thé à la Menthe</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eloetelek">
+            <h2>Előételek</h2>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/88956086056c33f634c1dd.jpg" alt="Soupe à l'Oignon">
+                    <div class="overlay">Soupe à l'Oignon<br><small>Klasszikus francia hagymaleves, ropogós sajtos pirítóssal</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/csigak.avif" alt="Escargots">
+                    <div class="overlay">Escargots de Bourgogne<br><small>Vajban és fokhagymában sült burgundi csigák</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/Foie_gras_en_cocotte.jpg" alt="Foie Gras">
+                    <div class="overlay">Foie Gras<br><small>Libamáj terrine házi briós és fügés chutney kíséretében</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/recette-salade-chevre-chaud.webp" alt="Salade de Chèvre Chaud">
+                    <div class="overlay">Salade de Chèvre Chaud<br><small>Meleg kecskesajtos saláta dióval és mézes-mustáros öntettel</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="foetelek">
+            <h2>Főételek</h2>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/MC-Beef-Bourguignon-lpbv-mediumSquareAt3X-v4.jpg" alt="Boeuf Bourguignon">
+                    <div class="overlay">Boeuf Bourguignon<br><small>Vörösboros marharagu gyökérzöldségekkel és burgonyapürével</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/coq-au-vin-index-669023bcb811f.avif" alt="Coq au Vin">
+                    <div class="overlay">Coq au Vin<br><small>Borban párolt csirke gombával és gyökérzöldségekkel</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/csm_1075-recipe-page-Saffron-scented-Ratatouille_desktop_5ddfe5fdbf.jpg" alt="Ratatouille">
+                    <div class="overlay">Ratatouille<br><small>Provence-i zöldséges egytálétel (vegán)</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/Bar-en-filet-salade-provencale-et-tapenade-d-olives-noires.webp" alt="Filet de Bar">
+                    <div class="overlay">Filet de Bar à la Provençale<br><small>Tengeri sügér fűszernövényekkel és grillezett zöldségekkel</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sajt">
+            <h2>Sajtválogatás</h2>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/65faffde14b47.jpg" alt="Sajtválogatás">
+                    <div class="overlay"><small>Camembert, Roquefort, Comté, Brie,<br>friss baguette és szőlő</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desszert">
+            <h2>Desszertek</h2>
+            <div class="kartya-sor">
+                <div class="kartya">
+                    <img src="images/AR-228515-simple-creme-brulee-dessert-dmfs-4x3-821623e7a86548eeb89370ac23d5f251.jpg" alt="Crème Brûlée">
+                    <div class="overlay">Crème Brûlée<br><small>Klasszikus vaníliakrém karamellizált cukorréteggel</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/tarte-tatin-apple-1200.jpg" alt="Tarte Tatin">
+                    <div class="overlay">Tarte Tatin<br><small>Fordított almatorta karamellizált almával</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/images.jpg" alt="Macaron">
+                    <div class="overlay">Macaron Assortiment<br><small>Színes és ínycsiklandó macaronválogatás</small></div>
+                </div>
+                <div class="kartya">
+                    <img src="images/Mousse-Au-Chocolate-French-Chocolate-Mousse-4983.450.jpg" alt="Mousse au Chocolat">
+                    <div class="overlay">Mousse au Chocolat<br><small>Selymes francia csokoládéhab</small></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>Copyright ©</p>
+    <p>Elérhetőség: +36 30 123 4567</p>
+    <p class="footer-szlogen">"Egy csipetnyi Párizs,<br>egy falat Budapest"<br>- Michel Florentin</p>
+    <div class="social-ikonok">
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.x.com/" target="_blank"><img src="images/x-icon.avif" alt="X"></a>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('hamburgerMenu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+</script>
+
 </body>
 </html>

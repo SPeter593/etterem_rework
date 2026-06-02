@@ -1,401 +1,368 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-/*body{
-    background-color: #EAE0D5;
-}
-
-header{
-    position: sticky;
-    display: flex;
-    gap: 16vw;
-    border-bottom: 1.5px solid black;
-    background-color: #2c3e50;
-    align-items: center;
-    color: #ffff;
-}
-
-#slogen{
-    padding-left: 1.7vw;
-}
-
-.logo{
-    width: 5vw;
-    height: 5vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-    margin-right: 0.5vw;
-    border-radius: 10px;
-    
-}
-
-button{
-  color: #ffff;
-    background-color: #2c3e50;
-    font-size: 1.2vw;
-    padding: 0.5vw;
-    border-radius: 5px;
-}*/
-
-
-
-@media screen and (min-width: 601px){ 
-
-  button:hover{
-      background-color: #C49A6C;
-      transition: all 0.35s;
-      color: #000;
-    }
-    .dropdown{
-      display: none;
-    }
-  }
-   
-@media screen and (max-width: 601px){ 
-  .kep1{
-      width: 390px;
-      height:415px;
-      position: relative;
-      z-index: -1;
-  }
-  .kep2{
-    display: none;
-  }
-  .pincer2{
-    display: none;
-  }
-
-  .etteremkep{
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .foglal{
-    position: absolute;
-    bottom: 80px;
-    left:43%;
-    z-index: 2;
-
-  }
-  .tervez{
-    position: absolute;
-    bottom: 40px;
-    left:40%;
-    z-index: 2;
-
-  }
-  .kepen1{
-    background-color: #00c3ff;
-    font-size: 4vw;
-    color:black;
-  }
-   
-  .kepen2{
-    background-color: #ffff;
-    font-size: 4vw;
-    color:black;
-  }
-  .bemutatkozo{
-    height:70vw;
-    width: 68vw;
-    margin:auto;
-    /*margin-right:40px;
-    margin-left:80px;*/
-    margin-top: 9vw;
-    margin-bottom: 9vw;
-    font-size: larger;
-    text-align: center;
-  }
-  .alcim{
-    display: inline-block;
-
-  }
-  .bemu1{
-    display: inline-block;
-    font-size: 18px;
-  }
-  .bemu2{
-    display: inline-block;
-    font-size: 18px;
-  }
-  .font-style{
-    font-style: oblique;
-    font-size: 18px;
-  }
-
-  .pincer1{
-    display:block; 
-    width: 97px;
-    height:auto;
-    float:right;
-  }
-  .velemenyek{
-    margin-top: 15px;
-  }
-  .velem1{
-    border: 2px solid black;
-    border-radius: 5px;
-    margin:10px;
-  }
-
-  .velem2{
-    border: 2px solid black;
-    border-radius: 5px;
-    margin:10px;
-  }
-  .velem3{
-    border: 2px solid black;
-    border-radius: 5px;
-    margin:10px;
-  }
-  .anonymus{
-    display: block;
-    float:left;
-  }
-  .velem-txt{
-    padding:10px;
-  }
-
-}
-@media screen and (min-width:601px){
-  
-  .etteremkep{
-    position: relative;
-    text-align: center;
-    color: white;
-    float: right;
-    margin-right:30px;
-  }
-  .foglal{
-    position: absolute;
-    bottom: 10px;
-    left:2%;
-    z-index: 2;
-  }
-  .tervez{
-    position: absolute;
-    bottom: 10px;
-    right:2%;
-    z-index: 2;
-  }
-  .kepen1{
-    background-color: #00c3ff;
-    color:black;
-  }
-  
-  .kepen2{
-    background-color: #ffff;
-    color:black;
-  }
-  .kep2{
-    width: 45vw;
-    height:auto;
-    margin-top: 15px;
-  }
-  .kep1{
-  display:none;
-  }
-  .pincer1{
-    display:none;
-  }
-  .pincer2{
-    display: block;
-    width:120px;
-    height:auto;
-    float: left;
-  }
-  .bemutatkozo{
-    min-height:580px;
-    margin-right: 600px;
-    text-align:center;
-    margin-top:80px;
-    margin-left: 15px;
-  }
-  .alcim{
-    display:inline-block;
-    margin-top:20px;
-    margin-left:1vw;
-    font-size:45px;
-  }
-  .bemu1{
-    display:inline-block;
-    margin-top:10px;
-    font-size: 28px;
-    margin-left:1vw;
-
-  }
-  .bemu2{
-    display:block;
-    font-size: 28px;
-    margin-left:7.5vw;
-}
-  .font-style{    
-    display:block;
-    margin-left:7.5vw;
-    font-size: 28px;
-    font-style:oblique;
-  }
-  .velemenyek{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    
-  }
-  .velem1{
-    border: 2px solid black;
-    border-radius: 5px;
-    margin:5px;
-    width:30%;
-    min-height: 200px;    
-  }
+}
 
-  .velem2{
-    border: 2px solid black;
-    border-radius: 5px;
-    width:30%;
-    margin:5px;
-    min-height: 200px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAE0D5;
+    color: #202020;
+    line-height: 1.5;
+}
 
-  }
-  .velem3{
-    border: 2px solid black;
-    border-radius: 5px;
-    width:30%;
-    margin:5px;
-    min-height: 200px;
-
-  }
-  .anonymus{
+img {
+    max-width: 100%;
     display: block;
-    float:left;
-  }
-  .velem-txt{
-    padding:10px;
-    width: 300px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 1rem 1rem;
+    min-height: 5.5rem;
+    background-color: #2c3e50;
+    color: #fff;
+    border-bottom: 1.5px solid black;
+    z-index: 10;
+}
+
+#slogen {
+    font-size: 0.82rem;
+    line-height: 1.25;
+    max-width: 18rem;
+    min-width: 160px;
+    overflow-wrap: break-word;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+}
+
+header button,
+.kep-gombok button {
+    color: #fff;
+    background-color: #2c3e50;
+    font-size: 0.85rem;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header-jobb {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+#hamburger {
+    display: none;
+    position: relative;
+}
+
+#hamburger button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#hamburger button img {
+    width: 2.2rem;
+    height: auto;
+}
+
+#hamburgerMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 20;
+}
+
+#hamburgerMenu a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#hamburgerMenu a:hover {
+    background-color: #ddd;
+}
+
+.etteremkep-doboz {
+    position: relative;
     text-align: center;
-    margin:auto
-  }
-  h2{
-    margin-left:25px;
-    margin-bottom:10px;
-  }
+    margin: 1rem auto;
+    max-width: 100%;
 }
 
-/*@media screen and (max-width:601px) { /*header*/
-   /* #slogen{
-       display: none;
-    }
-    .button{
-        display: none;
-    }
-    img{
-        width: 10vw;
-        height: 10vw;
-
-    }
-
-    /* Jobb fölső logó fix méretei*/
-    /*.logoright {
-        width: 10%;
-        height: 10%;
-    }
-
-    .dropdown{
-        display: inline;
-      }
-      .dropbtn {
-
-        color: white;
-        margin: 1vw;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        right: 0;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
- 
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-     
+.etterem-pc,
+.etterem-mobil {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-/*@media screen and (max-width: 601px){ footer
 
-    footer{
-        display: flex;
-        justify-content: space-evenly;
-        border-top: 2px solid black;
-        margin:0;
-        padding:0;
-        align-items: center;
-        background-color: #C49A6C;
-    }
-    p{
-        font-size: 13px;
-    }   
-    .socials{
-        display: none;
-    }
-    
-    .terms{
-        display:none;
-    }
+.kep-gombok {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.8rem;
+    z-index: 2;
 }
-@media screen and (min-width: 601px){footer
-    footer{
-        display: flex;
+
+.kep-gombok button {
+    min-width: 120px;
+    font-size: 0.95rem;
+    padding: 0.7rem 0.9rem;
+}
+
+.foglal-gomb {
+    background-color: #00c3ff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.utvonal-gomb {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.bemutatkozo {
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1100px;
+}
+
+.bemutatkozo-szoveg {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+.bemutatkozo h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bemutatkozo p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.idezet {
+    font-style: oblique;
+}
+
+.pincer-bal,
+.pincer-jobb {
+    width: 120px;
+    height: auto;
+}
+
+.velemenyek-cim {
+    margin: 1.5rem 1rem 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.velemenyek {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem 2rem;
+}
+
+.velemeny {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 360px;
+    background-color: #fff;
+}
+
+.velemeny img {
+    float: left;
+    width: 50px;
+    margin-right: 0.8rem;
+}
+
+.velemeny p {
+    padding-top: 0.2rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid black;
+    background-color: #C49A6C;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-szlogen {
+    font-style: oblique;
+}
+
+.social-ikonok {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.social-ikonok img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 601px) {
+    header {
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        border-top: 2px solid black;
-        margin:0;
-        padding:0;
-        background-color: #C49A6C;
-        line-height: 25px;
-        height:60px;
-        align-items: center;
-        border-radius: 0%;
+        justify-content: space-between;
     }
-    p{
-        font-size: 1vw;
-    }
-    .szlogen{
+
+    #slogen {
         display: none;
     }
-    img{
-        height:2vw;
-        width: 2vw;
-        border-radius: 5px; 
+
+    .header-jobb {
+        display: none;
     }
-    .ig{
-        border-radius: 5px; 
+
+    #hamburger {
+        display: inline-block;
     }
-    .fb{
-        border-radius: 5px; 
+
+    #hamburgerMenu {
+        display: none;
+        width: 100%;
+        right: 0;
     }
-}*/
+
+    #hamburgerMenu.show {
+        display: block;
+    }
+
+    .etterem-mobil {
+        display: block;
+    }
+
+    .etterem-pc {
+        display: none;
+    }
+
+    .kep-gombok {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .bemutatkozo {
+        margin-top: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .pincer-bal {
+        display: block;
+        float: right;
+        width: 97px;
+    }
+
+    .pincer-jobb {
+        display: none;
+    }
+
+    .velemeny {
+        width: 100%;
+        max-width: none;
+    }
+
+    .social-ikonok {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .etteremkep-doboz {
+        margin: 2rem auto;
+        max-width: 1200px;
+    }
+
+    .kep-gombok {
+        position: absolute;
+        bottom: 10px;
+        left: 2%;
+        transform: none;
+        flex-direction: row;
+    }
+
+    .etterem-mobil {
+        display: none;
+    }
+
+    .etterem-pc {
+        display: block;
+    }
+
+    .pincer-bal {
+        display: none;
+    }
+
+    .pincer-jobb {
+        display: block;
+    }
+
+    .bemutatkozo {
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+
+    .velemeny {
+        width: 30%;
+        max-width: none;
+    }
+
+    .social-ikonok {
+        display: flex;
+    }
+}
